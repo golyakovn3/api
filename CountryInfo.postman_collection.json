@@ -1,0 +1,1402 @@
+{
+	"info": {
+		"_postman_id": "f83646b8-800a-4b0e-81d7-56203a063ea9",
+		"name": "CountryInfo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40960054",
+		"_collection_link": "https://www.postman.com/golyakovn3/soap/collection/r58wr2y/countryinfo?action=share&source=collection_link&creator=40960054"
+	},
+	"item": [
+		{
+			"name": "Test",
+			"item": [
+				{
+					"name": "ListOfContinentsByName",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <ListOfContinentsByName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\"/>\r\n    </Body>\r\n</Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"oorsprong",
+								"org"
+							],
+							"path": [
+								"websamples.countryinfo",
+								"CountryInfoService.wso"
+							],
+							"query": [
+								{
+									"key": "WSDL",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Успешное получение списка всех континентов с ISO-кодами",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <ListOfContinentsByName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\"/>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:23:28 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "466"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:ListOfContinentsByNameResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:ListOfContinentsByNameResult>\n                <m:tContinent>\n                    <m:sCode>AF</m:sCode>\n                    <m:sName>Africa</m:sName>\n                </m:tContinent>\n                <m:tContinent>\n                    <m:sCode>AN</m:sCode>\n                    <m:sName>Antarctica</m:sName>\n                </m:tContinent>\n                <m:tContinent>\n                    <m:sCode>AS</m:sCode>\n                    <m:sName>Asia</m:sName>\n                </m:tContinent>\n                <m:tContinent>\n                    <m:sCode>EU</m:sCode>\n                    <m:sName>Europe</m:sName>\n                </m:tContinent>\n                <m:tContinent>\n                    <m:sCode>OC</m:sCode>\n                    <m:sName>Ocenania</m:sName>\n                </m:tContinent>\n                <m:tContinent>\n                    <m:sCode>AM</m:sCode>\n                    <m:sName>The Americas</m:sName>\n                </m:tContinent>\n            </m:ListOfContinentsByNameResult>\n        </m:ListOfContinentsByNameResponse>\n    </soap:Body>\n</soap:Envelope>"
+						}
+					]
+				},
+				{
+					"name": "ListOfCurrenciesByName",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <ListOfCurrenciesByName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\"/>\r\n    </Body>\r\n</Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"oorsprong",
+								"org"
+							],
+							"path": [
+								"websamples.countryinfo",
+								"CountryInfoService.wso"
+							],
+							"query": [
+								{
+									"key": "WSDL",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Успешное получение списка всех валют с ISO-кодами",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <ListOfCurrenciesByName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\"/>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:28:05 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2995"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:ListOfCurrenciesByNameResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:ListOfCurrenciesByNameResult>\n                <m:tCurrency>\n                    <m:sISOCode>AFA</m:sISOCode>\n                    <m:sName>Afghanis</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>DZD</m:sISOCode>\n                    <m:sName>Algeria Dinars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MGA</m:sISOCode>\n                    <m:sName>Ariary</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>AWG</m:sISOCode>\n                    <m:sName>Aruba Guilders (also called Florins)</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>AUD</m:sISOCode>\n                    <m:sName>Australian Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BSD</m:sISOCode>\n                    <m:sName>Bahamas Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BHD</m:sISOCode>\n                    <m:sName>Bahrain Dinars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>THB</m:sISOCode>\n                    <m:sName>Baht</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>PAB</m:sISOCode>\n                    <m:sName>Balboa</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BBD</m:sISOCode>\n                    <m:sName>Barbados Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BZD</m:sISOCode>\n                    <m:sName>Belize Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BMD</m:sISOCode>\n                    <m:sName>Bermuda Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>ETB</m:sISOCode>\n                    <m:sName>Birr</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>VEB</m:sISOCode>\n                    <m:sName>Bolivares</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BOB</m:sISOCode>\n                    <m:sName>Bolivianos</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BRL</m:sISOCode>\n                    <m:sName>Brazil Real</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BND</m:sISOCode>\n                    <m:sName>Brunei Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CAD</m:sISOCode>\n                    <m:sName>Canadian Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>KYD</m:sISOCode>\n                    <m:sName>Cayman Island Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>GHC</m:sISOCode>\n                    <m:sName>Cedis</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CRC</m:sISOCode>\n                    <m:sName>Colones</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SVC</m:sISOCode>\n                    <m:sName>Colones</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>XAF</m:sISOCode>\n                    <m:sName>Communauté Financière Africaine Francs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>XOF</m:sISOCode>\n                    <m:sName>Communauté Financière Africaine Francs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>XPF</m:sISOCode>\n                    <m:sName>Comptoirs Franþais du Pacifique Francs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CDF</m:sISOCode>\n                    <m:sName>Congolese Francs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BAM</m:sISOCode>\n                    <m:sName>Convertible Marka</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>NIO</m:sISOCode>\n                    <m:sName>Cordobas</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>GMD</m:sISOCode>\n                    <m:sName>Dalasi</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MKD</m:sISOCode>\n                    <m:sName>Denars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CSD</m:sISOCode>\n                    <m:sName>Dinars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>IQD</m:sISOCode>\n                    <m:sName>Dinars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>JOD</m:sISOCode>\n                    <m:sName>Dinars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>KWD</m:sISOCode>\n                    <m:sName>Dinars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>LYD</m:sISOCode>\n                    <m:sName>Dinars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SDD</m:sISOCode>\n                    <m:sName>Dinars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>TND</m:sISOCode>\n                    <m:sName>Dinars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>AED</m:sISOCode>\n                    <m:sName>Dirhams</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>STD</m:sISOCode>\n                    <m:sName>Dobras</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>FJD</m:sISOCode>\n                    <m:sName>Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>GYD</m:sISOCode>\n                    <m:sName>Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>JMD</m:sISOCode>\n                    <m:sName>Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>LRD</m:sISOCode>\n                    <m:sName>Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>NAD</m:sISOCode>\n                    <m:sName>Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SBD</m:sISOCode>\n                    <m:sName>Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SGD</m:sISOCode>\n                    <m:sName>Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SRD</m:sISOCode>\n                    <m:sName>Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>TTD</m:sISOCode>\n                    <m:sName>Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>USD</m:sISOCode>\n                    <m:sName>Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>VND</m:sISOCode>\n                    <m:sName>Dong</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>AMD</m:sISOCode>\n                    <m:sName>Drams</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>XCD</m:sISOCode>\n                    <m:sName>East Caribbean Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SZL</m:sISOCode>\n                    <m:sName>Emalangeni</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CVE</m:sISOCode>\n                    <m:sName>Escudos</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>EUR</m:sISOCode>\n                    <m:sName>Euro</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>FKP</m:sISOCode>\n                    <m:sName>Falklands Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>HUF</m:sISOCode>\n                    <m:sName>Forint</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BIF</m:sISOCode>\n                    <m:sName>Francs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>DJF</m:sISOCode>\n                    <m:sName>Francs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>GNF</m:sISOCode>\n                    <m:sName>Francs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>KMF</m:sISOCode>\n                    <m:sName>Francs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>GIP</m:sISOCode>\n                    <m:sName>Gibraltar Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>XAU</m:sISOCode>\n                    <m:sName>Gold Ounces</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>HTG</m:sISOCode>\n                    <m:sName>Gourdes</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>GBP</m:sISOCode>\n                    <m:sName>Great Brittain Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>PYG</m:sISOCode>\n                    <m:sName>Guarani</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>HKD</m:sISOCode>\n                    <m:sName>Hong Kong Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>UAH</m:sISOCode>\n                    <m:sName>Hryvnia</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>XDR</m:sISOCode>\n                    <m:sName>International Monetary Fund (IMF) Special Drawing Rights</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>PGK</m:sISOCode>\n                    <m:sName>Kina</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>LAK</m:sISOCode>\n                    <m:sName>Kips</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CZK</m:sISOCode>\n                    <m:sName>Koruny</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SKK</m:sISOCode>\n                    <m:sName>Koruny</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>NOK</m:sISOCode>\n                    <m:sName>Krone</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>DKK</m:sISOCode>\n                    <m:sName>Kroner</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SEK</m:sISOCode>\n                    <m:sName>Kronor</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>ISK</m:sISOCode>\n                    <m:sName>Kronur</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>EEK</m:sISOCode>\n                    <m:sName>Krooni</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>HRK</m:sISOCode>\n                    <m:sName>Kuna</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>ZMK</m:sISOCode>\n                    <m:sName>Kwacha</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MWK</m:sISOCode>\n                    <m:sName>Kwachas</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>AOA</m:sISOCode>\n                    <m:sName>Kwanza</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MMK</m:sISOCode>\n                    <m:sName>Kyats</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>GEL</m:sISOCode>\n                    <m:sName>Lari</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>LVL</m:sISOCode>\n                    <m:sName>Lati</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MDL</m:sISOCode>\n                    <m:sName>Lei</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>ALL</m:sISOCode>\n                    <m:sName>Leke</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>HNL</m:sISOCode>\n                    <m:sName>Lempiras</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SLL</m:sISOCode>\n                    <m:sName>Leones</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BGN</m:sISOCode>\n                    <m:sName>Leva</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>TRL</m:sISOCode>\n                    <m:sName>Liras [being phased out]</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MTL</m:sISOCode>\n                    <m:sName>Liri</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>LTL</m:sISOCode>\n                    <m:sName>Litai</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SPL</m:sISOCode>\n                    <m:sName>Luigini</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>LSL</m:sISOCode>\n                    <m:sName>Maloti</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>AZM</m:sISOCode>\n                    <m:sName>Manats</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>TMM</m:sISOCode>\n                    <m:sName>Manats</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MZM</m:sISOCode>\n                    <m:sName>Meticais</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MAD</m:sISOCode>\n                    <m:sName>Morocco Dirhams</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>NGN</m:sISOCode>\n                    <m:sName>Nairas</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>ERN</m:sISOCode>\n                    <m:sName>Nakfa</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>NPR</m:sISOCode>\n                    <m:sName>Nepal Rupees</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>ANG</m:sISOCode>\n                    <m:sName>Netherlands Antilles Guilders (also called Florins)</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>TWD</m:sISOCode>\n                    <m:sName>New Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>RON</m:sISOCode>\n                    <m:sName>New Lei</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>TRY</m:sISOCode>\n                    <m:sName>New Lira</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>ILS</m:sISOCode>\n                    <m:sName>New Shekels</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>NZD</m:sISOCode>\n                    <m:sName>New Zealand Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BTN</m:sISOCode>\n                    <m:sName>Ngultrum</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode></m:sISOCode>\n                    <m:sName>No Universal Currency</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>PEN</m:sISOCode>\n                    <m:sName>Nuevos Soles</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MRO</m:sISOCode>\n                    <m:sName>Ouguiyas</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>TOP</m:sISOCode>\n                    <m:sName>Pa'anga</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>XPD</m:sISOCode>\n                    <m:sName>Palladium Ounces</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MOP</m:sISOCode>\n                    <m:sName>Patacas</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>ARS</m:sISOCode>\n                    <m:sName>Pesos</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CLP</m:sISOCode>\n                    <m:sName>Pesos</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>COP</m:sISOCode>\n                    <m:sName>Pesos</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CUP</m:sISOCode>\n                    <m:sName>Pesos</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>DOP</m:sISOCode>\n                    <m:sName>Pesos</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MXN</m:sISOCode>\n                    <m:sName>Pesos</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>PHP</m:sISOCode>\n                    <m:sName>Pesos</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>UYU</m:sISOCode>\n                    <m:sName>Pesos</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>XPT</m:sISOCode>\n                    <m:sName>Platinum Ounces</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CYP</m:sISOCode>\n                    <m:sName>Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>EGP</m:sISOCode>\n                    <m:sName>Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>GGP</m:sISOCode>\n                    <m:sName>Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>IMP</m:sISOCode>\n                    <m:sName>Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>JEP</m:sISOCode>\n                    <m:sName>Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>LBP</m:sISOCode>\n                    <m:sName>Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SHP</m:sISOCode>\n                    <m:sName>Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SYP</m:sISOCode>\n                    <m:sName>Pounds</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BWP</m:sISOCode>\n                    <m:sName>Pulas</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>GTQ</m:sISOCode>\n                    <m:sName>Quetzales</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>IRR</m:sISOCode>\n                    <m:sName>Rials</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>OMR</m:sISOCode>\n                    <m:sName>Rials</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>QAR</m:sISOCode>\n                    <m:sName>Rials</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>YER</m:sISOCode>\n                    <m:sName>Rials</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>KHR</m:sISOCode>\n                    <m:sName>Riels</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MYR</m:sISOCode>\n                    <m:sName>Ringgits</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SAR</m:sISOCode>\n                    <m:sName>Riyals</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BYR</m:sISOCode>\n                    <m:sName>Rubles</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>RUB</m:sISOCode>\n                    <m:sName>Rubles</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MVR</m:sISOCode>\n                    <m:sName>Rufiyaa</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>INR</m:sISOCode>\n                    <m:sName>Rupees</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>LKR</m:sISOCode>\n                    <m:sName>Rupees</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MUR</m:sISOCode>\n                    <m:sName>Rupees</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>PKR</m:sISOCode>\n                    <m:sName>Rupees</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SCR</m:sISOCode>\n                    <m:sName>Rupees</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>IDR</m:sISOCode>\n                    <m:sName>Rupiahs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>RWF</m:sISOCode>\n                    <m:sName>Rwanda Francs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>RSD</m:sISOCode>\n                    <m:sName>Serbian Dinar</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>KES</m:sISOCode>\n                    <m:sName>Shillings</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SOS</m:sISOCode>\n                    <m:sName>Shillings</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>TZS</m:sISOCode>\n                    <m:sName>Shillings</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>UGX</m:sISOCode>\n                    <m:sName>Shillings</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>XAG</m:sISOCode>\n                    <m:sName>Silver Ounces</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>TJS</m:sISOCode>\n                    <m:sName>Somoni</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>KGS</m:sISOCode>\n                    <m:sName>Soms</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>ZAR</m:sISOCode>\n                    <m:sName>South Africa Rands</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>UZS</m:sISOCode>\n                    <m:sName>Sums</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CHF</m:sISOCode>\n                    <m:sName>Swiss Francs</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>BDT</m:sISOCode>\n                    <m:sName>Taka</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>WST</m:sISOCode>\n                    <m:sName>Tala</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>KZT</m:sISOCode>\n                    <m:sName>Tenge</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>SIT</m:sISOCode>\n                    <m:sName>Tolars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>MNT</m:sISOCode>\n                    <m:sName>Tugriks</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>TVD</m:sISOCode>\n                    <m:sName>Tuvalu Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>VUV</m:sISOCode>\n                    <m:sName>Vatu</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>KPW</m:sISOCode>\n                    <m:sName>Won</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>KRW</m:sISOCode>\n                    <m:sName>Won</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>JPY</m:sISOCode>\n                    <m:sName>Yen</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>CNY</m:sISOCode>\n                    <m:sName>Yuan Renminbi</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>ZWD</m:sISOCode>\n                    <m:sName>Zimbabwe Dollars</m:sName>\n                </m:tCurrency>\n                <m:tCurrency>\n                    <m:sISOCode>PLN</m:sISOCode>\n                    <m:sName>Zlotych</m:sName>\n                </m:tCurrency>\n            </m:ListOfCurrenciesByNameResult>\n        </m:ListOfCurrenciesByNameResponse>\n    </soap:Body>\n</soap:Envelope>"
+						}
+					]
+				},
+				{
+					"name": "ListOfCountryNamesByName",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\r\n    <Body>\r\n        <ListOfCountryNamesByName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\"/>\r\n    </Body>\r\n</Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"oorsprong",
+								"org"
+							],
+							"path": [
+								"websamples.countryinfo",
+								"CountryInfoService.wso"
+							],
+							"query": [
+								{
+									"key": "WSDL",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Успешное получение списка всех стран с ISO-кодами",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\r\n    <Body>\r\n        <ListOfCountryNamesByName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\"/>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:36:36 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4826"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:ListOfCountryNamesByNameResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:ListOfCountryNamesByNameResult>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AX</m:sISOCode>\n                    <m:sName>Åland Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AF</m:sISOCode>\n                    <m:sName>Afghanistan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AL</m:sISOCode>\n                    <m:sName>Albania</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>DZ</m:sISOCode>\n                    <m:sName>Algeria</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AS</m:sISOCode>\n                    <m:sName>American Samoa</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AD</m:sISOCode>\n                    <m:sName>Andorra</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AO</m:sISOCode>\n                    <m:sName>Angola</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AI</m:sISOCode>\n                    <m:sName>Anguilla</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AQ</m:sISOCode>\n                    <m:sName>Antarctica</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AG</m:sISOCode>\n                    <m:sName>Antigua &amp; Barbuda</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AR</m:sISOCode>\n                    <m:sName>Argentina</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AM</m:sISOCode>\n                    <m:sName>Armenia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AW</m:sISOCode>\n                    <m:sName>Aruba</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AU</m:sISOCode>\n                    <m:sName>Australia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AT</m:sISOCode>\n                    <m:sName>Austria</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AZ</m:sISOCode>\n                    <m:sName>Azerbaijan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BS</m:sISOCode>\n                    <m:sName>Bahamas</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BH</m:sISOCode>\n                    <m:sName>Bahrain</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BD</m:sISOCode>\n                    <m:sName>Bangladesh</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BB</m:sISOCode>\n                    <m:sName>Barbados</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BY</m:sISOCode>\n                    <m:sName>Belarus</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BE</m:sISOCode>\n                    <m:sName>Belgium</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BZ</m:sISOCode>\n                    <m:sName>Belize</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BJ</m:sISOCode>\n                    <m:sName>Benin</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BM</m:sISOCode>\n                    <m:sName>Bermuda</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BT</m:sISOCode>\n                    <m:sName>Bhutan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BO</m:sISOCode>\n                    <m:sName>Bolivia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BQ</m:sISOCode>\n                    <m:sName>Bonaire, Sint Eustatius and Saba</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BA</m:sISOCode>\n                    <m:sName>Bosnia &amp; Herzegovina</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BW</m:sISOCode>\n                    <m:sName>Botswana</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BV</m:sISOCode>\n                    <m:sName>Bouvet Island</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BR</m:sISOCode>\n                    <m:sName>Brazil</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>IO</m:sISOCode>\n                    <m:sName>British Indian Ocean Territory</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BN</m:sISOCode>\n                    <m:sName>Brunei-Darussalam</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BG</m:sISOCode>\n                    <m:sName>Bulgaria</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BF</m:sISOCode>\n                    <m:sName>Burkina Faso</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BI</m:sISOCode>\n                    <m:sName>Burundi</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CI</m:sISOCode>\n                    <m:sName>Côte D'Ivoire (Ivory Coast)</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KH</m:sISOCode>\n                    <m:sName>Cambodia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CM</m:sISOCode>\n                    <m:sName>Cameroon</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CA</m:sISOCode>\n                    <m:sName>Canada</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CV</m:sISOCode>\n                    <m:sName>Cape Verde</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KY</m:sISOCode>\n                    <m:sName>Cayman Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CF</m:sISOCode>\n                    <m:sName>Central African Republic</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TD</m:sISOCode>\n                    <m:sName>Chad</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CL</m:sISOCode>\n                    <m:sName>Chile</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CN</m:sISOCode>\n                    <m:sName>China</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CX</m:sISOCode>\n                    <m:sName>Chrismas Island</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CC</m:sISOCode>\n                    <m:sName>Cocos (Keeling) Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MF</m:sISOCode>\n                    <m:sName>Collectivity of Saint Martin</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CO</m:sISOCode>\n                    <m:sName>Colombia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KM</m:sISOCode>\n                    <m:sName>Comoros</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CG</m:sISOCode>\n                    <m:sName>Congo</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CD</m:sISOCode>\n                    <m:sName>Congo, Democratic Republic</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CK</m:sISOCode>\n                    <m:sName>Cook Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CR</m:sISOCode>\n                    <m:sName>Costa Rica</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>HR</m:sISOCode>\n                    <m:sName>Croatia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CU</m:sISOCode>\n                    <m:sName>Cuba</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CW</m:sISOCode>\n                    <m:sName>Curaçao</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CY</m:sISOCode>\n                    <m:sName>Cyprus</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CZ</m:sISOCode>\n                    <m:sName>Czech Republic</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>DK</m:sISOCode>\n                    <m:sName>Denmark</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>DJ</m:sISOCode>\n                    <m:sName>Djibouti</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>DM</m:sISOCode>\n                    <m:sName>Dominica</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>DO</m:sISOCode>\n                    <m:sName>Dominican Republic</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>EC</m:sISOCode>\n                    <m:sName>Ecuador</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>EG</m:sISOCode>\n                    <m:sName>Egypt</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SV</m:sISOCode>\n                    <m:sName>El Salvador</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GQ</m:sISOCode>\n                    <m:sName>Equatorial Guinea</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>ER</m:sISOCode>\n                    <m:sName>Eritrea</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>EE</m:sISOCode>\n                    <m:sName>Estonia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>ET</m:sISOCode>\n                    <m:sName>Ethiopia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>FK</m:sISOCode>\n                    <m:sName>Falkand Islands (Malvinas)</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>FO</m:sISOCode>\n                    <m:sName>Faroe Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>FJ</m:sISOCode>\n                    <m:sName>Fiji</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>FI</m:sISOCode>\n                    <m:sName>Finland</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>FR</m:sISOCode>\n                    <m:sName>France</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GF</m:sISOCode>\n                    <m:sName>French Guiana</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PF</m:sISOCode>\n                    <m:sName>French Polynesia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TF</m:sISOCode>\n                    <m:sName>French Southern Territories</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GA</m:sISOCode>\n                    <m:sName>Gabon</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GM</m:sISOCode>\n                    <m:sName>Gambia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GE</m:sISOCode>\n                    <m:sName>Georgia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>DE</m:sISOCode>\n                    <m:sName>Germany</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GH</m:sISOCode>\n                    <m:sName>Ghana</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GI</m:sISOCode>\n                    <m:sName>Gibraltar</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GR</m:sISOCode>\n                    <m:sName>Greece</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GL</m:sISOCode>\n                    <m:sName>Greenland</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GD</m:sISOCode>\n                    <m:sName>Grenada</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GP</m:sISOCode>\n                    <m:sName>Guadeloupe</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GU</m:sISOCode>\n                    <m:sName>Guam</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GT</m:sISOCode>\n                    <m:sName>Guatemala</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GN</m:sISOCode>\n                    <m:sName>Guinea</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GW</m:sISOCode>\n                    <m:sName>Guinea-Bissau</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GY</m:sISOCode>\n                    <m:sName>Guyana</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>HT</m:sISOCode>\n                    <m:sName>Haiti</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>HM</m:sISOCode>\n                    <m:sName>Heard Island And McDonald Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>HN</m:sISOCode>\n                    <m:sName>Honduras</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>HK</m:sISOCode>\n                    <m:sName>Hong Kong</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>HU</m:sISOCode>\n                    <m:sName>Hungary</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>IS</m:sISOCode>\n                    <m:sName>Iceland</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>IN</m:sISOCode>\n                    <m:sName>India</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>ID</m:sISOCode>\n                    <m:sName>Indonesia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>IR</m:sISOCode>\n                    <m:sName>Iran</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>IQ</m:sISOCode>\n                    <m:sName>Iraq</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>IE</m:sISOCode>\n                    <m:sName>Ireland</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>IL</m:sISOCode>\n                    <m:sName>Israel</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>IT</m:sISOCode>\n                    <m:sName>Italy</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>JM</m:sISOCode>\n                    <m:sName>Jamaica</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>JP</m:sISOCode>\n                    <m:sName>Japan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>JO</m:sISOCode>\n                    <m:sName>Jordan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KZ</m:sISOCode>\n                    <m:sName>Kazakhstan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KE</m:sISOCode>\n                    <m:sName>Kenya</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KI</m:sISOCode>\n                    <m:sName>Kiribati</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KW</m:sISOCode>\n                    <m:sName>Kuwait</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KG</m:sISOCode>\n                    <m:sName>Kyrgyzstan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LA</m:sISOCode>\n                    <m:sName>Laos</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LV</m:sISOCode>\n                    <m:sName>Latvia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LB</m:sISOCode>\n                    <m:sName>Lebanon</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LS</m:sISOCode>\n                    <m:sName>Lesotho</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LR</m:sISOCode>\n                    <m:sName>Liberia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LY</m:sISOCode>\n                    <m:sName>Libyan Arab Jamahiriya</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LI</m:sISOCode>\n                    <m:sName>Liechtenstein</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LT</m:sISOCode>\n                    <m:sName>Lithuania</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LU</m:sISOCode>\n                    <m:sName>Luxembourg</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MO</m:sISOCode>\n                    <m:sName>Macao</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MK</m:sISOCode>\n                    <m:sName>Macedonia  (former YR)</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MG</m:sISOCode>\n                    <m:sName>Madagascar</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MW</m:sISOCode>\n                    <m:sName>Malawi</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MY</m:sISOCode>\n                    <m:sName>Malaysia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MV</m:sISOCode>\n                    <m:sName>Maldives (Maladive Ilands)</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>ML</m:sISOCode>\n                    <m:sName>Mali</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MT</m:sISOCode>\n                    <m:sName>Malta</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MH</m:sISOCode>\n                    <m:sName>Marshall Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MQ</m:sISOCode>\n                    <m:sName>Martinique</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MR</m:sISOCode>\n                    <m:sName>Mauritania</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MU</m:sISOCode>\n                    <m:sName>Mauritius</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>YT</m:sISOCode>\n                    <m:sName>Mayotte</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MX</m:sISOCode>\n                    <m:sName>Mexico</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>FM</m:sISOCode>\n                    <m:sName>Micronesia  (Federa States of)</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MD</m:sISOCode>\n                    <m:sName>Moldova, Republic of</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MC</m:sISOCode>\n                    <m:sName>Monaco</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MN</m:sISOCode>\n                    <m:sName>Mongolia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>ME</m:sISOCode>\n                    <m:sName>Montenegro</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MS</m:sISOCode>\n                    <m:sName>Montserrat</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MA</m:sISOCode>\n                    <m:sName>Morocco</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MZ</m:sISOCode>\n                    <m:sName>Mozambique</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MM</m:sISOCode>\n                    <m:sName>Myanmar (Burma)</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NA</m:sISOCode>\n                    <m:sName>Namibia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NR</m:sISOCode>\n                    <m:sName>Nauru</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NP</m:sISOCode>\n                    <m:sName>Nepal</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NL</m:sISOCode>\n                    <m:sName>Netherlands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AN</m:sISOCode>\n                    <m:sName>Netherlands Antilles</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NC</m:sISOCode>\n                    <m:sName>New Caledonia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NZ</m:sISOCode>\n                    <m:sName>New Zealand</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NI</m:sISOCode>\n                    <m:sName>Nicaragua</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NE</m:sISOCode>\n                    <m:sName>Niger</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NG</m:sISOCode>\n                    <m:sName>Nigeria</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NU</m:sISOCode>\n                    <m:sName>Niue</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NF</m:sISOCode>\n                    <m:sName>Norfolk Island</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KP</m:sISOCode>\n                    <m:sName>North Korea</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>MP</m:sISOCode>\n                    <m:sName>Northern Mariana Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>NO</m:sISOCode>\n                    <m:sName>Norway</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>OM</m:sISOCode>\n                    <m:sName>Oman</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PK</m:sISOCode>\n                    <m:sName>Pakistan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PW</m:sISOCode>\n                    <m:sName>Palau</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PS</m:sISOCode>\n                    <m:sName>Palestinian Territory, Occupied</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PA</m:sISOCode>\n                    <m:sName>Panama</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PG</m:sISOCode>\n                    <m:sName>Papua-New Guinea</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PY</m:sISOCode>\n                    <m:sName>Paraguay</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PE</m:sISOCode>\n                    <m:sName>Peru</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PH</m:sISOCode>\n                    <m:sName>Philippines</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PN</m:sISOCode>\n                    <m:sName>Pitcairn</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PL</m:sISOCode>\n                    <m:sName>Poland</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PT</m:sISOCode>\n                    <m:sName>Portugal</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PR</m:sISOCode>\n                    <m:sName>Puerto Rico</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>QA</m:sISOCode>\n                    <m:sName>Quatar</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>RE</m:sISOCode>\n                    <m:sName>Reunion</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>RO</m:sISOCode>\n                    <m:sName>Romania</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>RU</m:sISOCode>\n                    <m:sName>Russian Federation</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>RW</m:sISOCode>\n                    <m:sName>Rwanda</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>BL</m:sISOCode>\n                    <m:sName>Saint Barthélemy</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SH</m:sISOCode>\n                    <m:sName>Saint Helena, Ascension and Tristan da Cunha</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>PM</m:sISOCode>\n                    <m:sName>Saint Pierre And Micquelon</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SM</m:sISOCode>\n                    <m:sName>San Marino</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>ST</m:sISOCode>\n                    <m:sName>Sao Tome &amp; Principe</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SA</m:sISOCode>\n                    <m:sName>Saudi Arabia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SN</m:sISOCode>\n                    <m:sName>Senegal</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>RS</m:sISOCode>\n                    <m:sName>Serbia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SC</m:sISOCode>\n                    <m:sName>Seychelles</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SL</m:sISOCode>\n                    <m:sName>Sierra Leone</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SG</m:sISOCode>\n                    <m:sName>Singapore</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SX</m:sISOCode>\n                    <m:sName>Sint-Maarten</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SK</m:sISOCode>\n                    <m:sName>Slovakia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SI</m:sISOCode>\n                    <m:sName>Slovenia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SB</m:sISOCode>\n                    <m:sName>Solomon Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SO</m:sISOCode>\n                    <m:sName>Somalia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>ZA</m:sISOCode>\n                    <m:sName>South Africa</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GS</m:sISOCode>\n                    <m:sName>South Georgia &amp; South Sandwich Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KR</m:sISOCode>\n                    <m:sName>South Korea</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>ES</m:sISOCode>\n                    <m:sName>Spain</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LK</m:sISOCode>\n                    <m:sName>Sri Lanka</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>KN</m:sISOCode>\n                    <m:sName>St. Kitts &amp; Nevis</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>LC</m:sISOCode>\n                    <m:sName>St. Lucia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>VC</m:sISOCode>\n                    <m:sName>St. Vincent &amp; Grenadines</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SD</m:sISOCode>\n                    <m:sName>Sudan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SR</m:sISOCode>\n                    <m:sName>Suriname</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SJ</m:sISOCode>\n                    <m:sName>Svalbard And Jan Mayen</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SZ</m:sISOCode>\n                    <m:sName>Swaziland</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SE</m:sISOCode>\n                    <m:sName>Sweden</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>CH</m:sISOCode>\n                    <m:sName>Switzerland</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>SY</m:sISOCode>\n                    <m:sName>Syrian Arab Republic</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TW</m:sISOCode>\n                    <m:sName>Taiwan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TJ</m:sISOCode>\n                    <m:sName>Tajikistan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TZ</m:sISOCode>\n                    <m:sName>Tanzania</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TH</m:sISOCode>\n                    <m:sName>Thailand</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TL</m:sISOCode>\n                    <m:sName>Timor-Leste</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TG</m:sISOCode>\n                    <m:sName>Togo</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TK</m:sISOCode>\n                    <m:sName>Tokelau</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TO</m:sISOCode>\n                    <m:sName>Tonga</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TT</m:sISOCode>\n                    <m:sName>Trinidad &amp; Tobago</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TN</m:sISOCode>\n                    <m:sName>Tunisia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TR</m:sISOCode>\n                    <m:sName>Turkey</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TM</m:sISOCode>\n                    <m:sName>Turkmenistan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TC</m:sISOCode>\n                    <m:sName>Turks And Caicos Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>TV</m:sISOCode>\n                    <m:sName>Tuvalu</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>UG</m:sISOCode>\n                    <m:sName>Uganda</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>UA</m:sISOCode>\n                    <m:sName>Ukraine</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>AE</m:sISOCode>\n                    <m:sName>United Arab Emirates</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>GB</m:sISOCode>\n                    <m:sName>United Kingdom</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>US</m:sISOCode>\n                    <m:sName>United States</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>UM</m:sISOCode>\n                    <m:sName>United States Minor Outlying Islands</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>UY</m:sISOCode>\n                    <m:sName>Uruguay</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>UZ</m:sISOCode>\n                    <m:sName>Uzbekistan</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>VU</m:sISOCode>\n                    <m:sName>Vanuatu</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>VA</m:sISOCode>\n                    <m:sName>Vatican City</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>VE</m:sISOCode>\n                    <m:sName>Venezuela</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>VN</m:sISOCode>\n                    <m:sName>Vietnam</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>VG</m:sISOCode>\n                    <m:sName>Virgin Islands, British</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>VI</m:sISOCode>\n                    <m:sName>Virgin Islands, U.S.</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>WF</m:sISOCode>\n                    <m:sName>Wallis And Futuna</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>EH</m:sISOCode>\n                    <m:sName>Western Sahara</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>WS</m:sISOCode>\n                    <m:sName>Western Samoa</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>YE</m:sISOCode>\n                    <m:sName>Yemen</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>ZM</m:sISOCode>\n                    <m:sName>Zambia</m:sName>\n                </m:tCountryCodeAndName>\n                <m:tCountryCodeAndName>\n                    <m:sISOCode>ZW</m:sISOCode>\n                    <m:sName>Zimbabwe</m:sName>\n                </m:tCountryCodeAndName>\n            </m:ListOfCountryNamesByNameResult>\n        </m:ListOfCountryNamesByNameResponse>\n    </soap:Body>\n</soap:Envelope>"
+						}
+					]
+				},
+				{
+					"name": "CountryName",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CountryName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>[string]</sCountryISOCode>\r\n        </CountryName>\r\n    </Body>\r\n</Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"oorsprong",
+								"org"
+							],
+							"path": [
+								"websamples.countryinfo",
+								"CountryInfoService.wso"
+							],
+							"query": [
+								{
+									"key": "WSDL",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Успешное получение названия страны по ISO-коду alpha-2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CountryName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>RU</sCountryISOCode>\r\n        </CountryName>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:39:44 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "314"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:CountryNameResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:CountryNameResult>Russian Federation</m:CountryNameResult>\n        </m:CountryNameResponse>\n    </soap:Body>\n</soap:Envelope>"
+						},
+						{
+							"name": "Успешное получение названия страны по ISO-коду alpha-3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CountryName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>RUS</sCountryISOCode>\r\n        </CountryName>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:40:49 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "314"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:CountryNameResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:CountryNameResult>Russian Federation</m:CountryNameResult>\n        </m:CountryNameResponse>\n    </soap:Body>\n</soap:Envelope>"
+						},
+						{
+							"name": "Ошибка при попытке получения названия страны по численному ISO-коду (string)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CountryName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>\"643\"</sCountryISOCode>\r\n        </CountryName>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:43:59 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "322"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:CountryNameResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:CountryNameResult>Country not found in the database</m:CountryNameResult>\n        </m:CountryNameResponse>\n    </soap:Body>\n</soap:Envelope>"
+						},
+						{
+							"name": "Ошибка при попытке получения названия страны по численному ISO-коду (int)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CountryName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>643</sCountryISOCode>\r\n        </CountryName>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "CountryISOCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CountryISOCode xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryName>[string]</sCountryName>\r\n        </CountryISOCode>\r\n    </Body>\r\n</Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"oorsprong",
+								"org"
+							],
+							"path": [
+								"websamples.countryinfo",
+								"CountryInfoService.wso"
+							],
+							"query": [
+								{
+									"key": "WSDL",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Успешное получение ISO-кода по сокращенному названию страны",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CountryISOCode xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryName>Russia</sCountryName>\r\n        </CountryISOCode>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:51:54 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "306"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:CountryISOCodeResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:CountryISOCodeResult>RU</m:CountryISOCodeResult>\n        </m:CountryISOCodeResponse>\n    </soap:Body>\n</soap:Envelope>"
+						},
+						{
+							"name": "Успешное получение ISO-кода по полному названию страны",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CountryISOCode xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryName>Russian Federation</sCountryName>\r\n        </CountryISOCode>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:52:38 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "306"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:CountryISOCodeResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:CountryISOCodeResult>RU</m:CountryISOCodeResult>\n        </m:CountryISOCodeResponse>\n    </soap:Body>\n</soap:Envelope>"
+						}
+					]
+				},
+				{
+					"name": "FullCountryInfo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <FullCountryInfo xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>[string]</sCountryISOCode>\r\n        </FullCountryInfo>\r\n    </Body>\r\n</Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"oorsprong",
+								"org"
+							],
+							"path": [
+								"websamples.countryinfo",
+								"CountryInfoService.wso"
+							],
+							"query": [
+								{
+									"key": "WSDL",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Успешное получение полной информации о стране по ISO-коду alpha-2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <FullCountryInfo xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>RU</sCountryISOCode>\r\n        </FullCountryInfo>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:56:10 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "494"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:FullCountryInfoResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:FullCountryInfoResult>\n                <m:sISOCode>RU</m:sISOCode>\n                <m:sName>Russian Federation</m:sName>\n                <m:sCapitalCity>Moscow</m:sCapitalCity>\n                <m:sPhoneCode>7</m:sPhoneCode>\n                <m:sContinentCode>AS</m:sContinentCode>\n                <m:sCurrencyISOCode>RUB</m:sCurrencyISOCode>\n                <m:sCountryFlag>http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Russian.jpg</m:sCountryFlag>\n                <m:Languages>\n                    <m:tLanguage>\n                        <m:sISOCode>rus</m:sISOCode>\n                        <m:sName>Russian</m:sName>\n                    </m:tLanguage>\n                </m:Languages>\n            </m:FullCountryInfoResult>\n        </m:FullCountryInfoResponse>\n    </soap:Body>\n</soap:Envelope>"
+						},
+						{
+							"name": "Успешное получение полной информации о стране по ISO-коду alpha-3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <FullCountryInfo xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>RUS</sCountryISOCode>\r\n        </FullCountryInfo>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:56:54 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "494"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:FullCountryInfoResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:FullCountryInfoResult>\n                <m:sISOCode>RU</m:sISOCode>\n                <m:sName>Russian Federation</m:sName>\n                <m:sCapitalCity>Moscow</m:sCapitalCity>\n                <m:sPhoneCode>7</m:sPhoneCode>\n                <m:sContinentCode>AS</m:sContinentCode>\n                <m:sCurrencyISOCode>RUB</m:sCurrencyISOCode>\n                <m:sCountryFlag>http://www.oorsprong.org/WebSamples.CountryInfo/Flags/Russian.jpg</m:sCountryFlag>\n                <m:Languages>\n                    <m:tLanguage>\n                        <m:sISOCode>rus</m:sISOCode>\n                        <m:sName>Russian</m:sName>\n                    </m:tLanguage>\n                </m:Languages>\n            </m:FullCountryInfoResult>\n        </m:FullCountryInfoResponse>\n    </soap:Body>\n</soap:Envelope>"
+						},
+						{
+							"name": "Ошибка при попытке получения полной информации о стране по численному ISO-коду (int)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <FullCountryInfo xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>643</sCountryISOCode>\r\n        </FullCountryInfo>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:59:13 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "431"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:FullCountryInfoResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:FullCountryInfoResult>\n                <m:sISOCode></m:sISOCode>\n                <m:sName>Country not found in the database</m:sName>\n                <m:sCapitalCity></m:sCapitalCity>\n                <m:sPhoneCode></m:sPhoneCode>\n                <m:sContinentCode></m:sContinentCode>\n                <m:sCurrencyISOCode></m:sCurrencyISOCode>\n                <m:sCountryFlag></m:sCountryFlag>\n                <m:Languages>\r\n        </m:Languages>\n            </m:FullCountryInfoResult>\n        </m:FullCountryInfoResponse>\n    </soap:Body>\n</soap:Envelope>"
+						},
+						{
+							"name": "Ошибка при попытке получения полной информации о стране по численному ISO-коду (string)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <FullCountryInfo xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>\"643\"</sCountryISOCode>\r\n        </FullCountryInfo>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 20:59:38 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "431"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:FullCountryInfoResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:FullCountryInfoResult>\n                <m:sISOCode></m:sISOCode>\n                <m:sName>Country not found in the database</m:sName>\n                <m:sCapitalCity></m:sCapitalCity>\n                <m:sPhoneCode></m:sPhoneCode>\n                <m:sContinentCode></m:sContinentCode>\n                <m:sCurrencyISOCode></m:sCurrencyISOCode>\n                <m:sCountryFlag></m:sCountryFlag>\n                <m:Languages>\r\n        </m:Languages>\n            </m:FullCountryInfoResult>\n        </m:FullCountryInfoResponse>\n    </soap:Body>\n</soap:Envelope>"
+						}
+					]
+				},
+				{
+					"name": "LanguageName",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <LanguageName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sISOCode>[string]</sISOCode>\r\n        </LanguageName>\r\n    </Body>\r\n</Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"oorsprong",
+								"org"
+							],
+							"path": [
+								"websamples.countryinfo",
+								"CountryInfoService.wso"
+							],
+							"query": [
+								{
+									"key": "WSDL",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Успешное получение языка страны по ISO-коду",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <LanguageName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sISOCode>RUS</sISOCode>\r\n        </LanguageName>\r\n    </Body>\r\n</Envelope>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+									"protocol": "http",
+									"host": [
+										"webservices",
+										"oorsprong",
+										"org"
+									],
+									"path": [
+										"websamples.countryinfo",
+										"CountryInfoService.wso"
+									],
+									"query": [
+										{
+											"key": "WSDL",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "private, max-age=0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/xml; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "Web-Service",
+									"value": "DataFlex 19.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 21:04:26 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "311"
+								}
+							],
+							"cookie": [],
+							"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <soap:Body>\n        <m:LanguageNameResponse xmlns:m=\"http://www.oorsprong.org/websamples.countryinfo\">\n            <m:LanguageNameResult>Russian</m:LanguageNameResult>\n        </m:LanguageNameResponse>\n    </soap:Body>\n</soap:Envelope>"
+						}
+					]
+				}
+			]
+		}
+	]
+}
